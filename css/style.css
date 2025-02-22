@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+:root {
+	--primary: #b88e2f;
+    --font-family: "Poppins", sans-serif
+}
+body{
+font-family: var(--font-family);
+}
+
+.container{
+   max-width: 1240px;
+   margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+nav{
+    background: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu{
+    padding: 38px 32px;
+}
+.menu ul li a{
+   padding: 0px 32.5px;
+   font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+color: #000;
+position: relative;
+}
+
+.menu ul li a::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    bottom: 0;
+}
+
+.menu ul li a:hover::after{
+    background-color: var(--primary);
+    width: 100%;
+    transition: 0.5s;
+}
+.quicklinks ul li a{
+    padding: 0px 22.5px;
+}
+
+/* section-1 */
+#banner{
+    background-image: url(../images/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+    background-repeat: no-repeat;
+    padding: 153px 0 115px  ;
+}
+
+.bannercontent{
+    border-radius: 10px;
+max-width: 643px;
+height: 443px;
+background: #fff3e3;
+margin-left: auto;
+padding: 62px 43px 47px;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.151);
+}
+
+.bannercontent h4{
+
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.19em;
+    color: #333;
+}
+.bannercontent h1{
+    
+font-weight: 700;
+font-size: 52px;
+line-height: 125%;
+color: var(--primary);
+}
+.bannercontent p{
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333;
+}
+.bannercontent a{
+    padding: 25px 72px;
+width: 222px;
+height: 74px;
+background: var(--primary);
+display: inline-block;
+color: #fff;
+margin: 17px 0 46px;
+border-radius: 10px;
+}
+
+/* section-1 */
+
+/* section-2 */
+#card {
+ padding: 56px 0 0px;
+}
+#card .text{
+    text-align: center;
+}
+#card .text h2{
+
+font-weight: 700;
+font-size: 26px;
+color: #2b2a2adc;
+}
+#card .text p{
+font-weight: 400;
+font-size: 15px;
+text-align: center;
+color: #666;
+}
+
+#card .box .box-1{
+    margin-top: 50px;
+    width: 33.33%; 
+    display: inline-block; 
+    
+/* background-image: url(../images/dining.png); */
+}
+.box .row h5{
+font-weight: 600;
+font-size: 18px;
+text-align: center;
+color: #333;
+margin: 25px auto;
+}
+/* section-2 */
+/* our products */
+#products{
+    padding: 56px 0 60px;
+}
+
+#products h1{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 35px;
+line-height: 120%;
+text-align: center;
+color: #3a3a3a;
+margin-bottom: 50px;
+}
+
+.productcard {
+    width: calc(25% - 32px);
+    /* outline: 1px solid red; */
+    margin-bottom: 32px;
+}
+
+.productcard .label{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: #e97171;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+
+}
+.productcard .productcardimage{
+    position: relative;
+}
+.productcardimage img{
+width: 100%;
+display: block;
+border-radius: 5px;
+}
+
+.productcard .producttext{
+    background: #f4f5f7;
+    padding:  16px 20px 30px 16px;
+}
+.productcard .producttext a{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3a3a3a;
+}
+
+.productcard .producttext {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+}
+
+.productcard .producttext h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3a3a3a;
+}
+
+.productcard .producttext span{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-decoration: line-through;
+color: #6d6b6b;
+}
+
+
+/* our products */
